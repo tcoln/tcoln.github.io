@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Git学习笔记</title>
+      <link href="/2020/04/03/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/04/03/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<p>Git分布式的版本控制系统</p><h2 id="常见命令学习"><a href="#常见命令学习" class="headerlink" title="常见命令学习"></a>常见命令学习</h2><p>git config –global user.name ‘’    # 设置提交的用户名和email<br>git config –global user.email ‘’<br>git init newproject        # 新建项目<br>git status    # 查看文件状态<br>git add file1    # 将工作目录文件添加到暂存区，暂存区进可提交，退可回滚<br>git add -u # 添加所有修改的文件<br>git commit -m’提交日志信息’    # 将暂存区文件提交到历史版本中<br>git log    -n5 –oneline    # 一行行地显示最近5条提交日志信息<br>git mv file1 file2    # 重命名暂存区文件<br>gitk    # 图形化查看版本信息</p><h2 id="Git分支管理"><a href="#Git分支管理" class="headerlink" title="Git分支管理"></a>Git分支管理</h2><p>git branch -av    # 查看所有分支及当前分支<br>git branch glt commitid    # 由commitid来新建名为glt的分支<br>git checkout -b glt commitid    # 由commitid来新建名为glt的分支，并让HEAD指向该分支<br>git checkout commitid    # 让HEAD指向树中间的commitid而不是分支，导致分离头指针，HEAD不属于任何分支的commit有可能被丢弃<br>git checkout master    # 切换回master分支</p><h2 id="Git三大对象"><a href="#Git三大对象" class="headerlink" title="Git三大对象"></a>Git三大对象</h2><p>commit是当前提交时刻的对象，里面包含根节点tree，tree指向子节点tree或者叶节点blob，叶子节点blob是真正的文件内容。</p><p>git cat-file -p hashid    # 查看hashid指向的对象内容<br>git diff HEAD HEAD~2    # 比较HEAD和HEAD的父版本的父版本</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>about</title>
       <link href="/2020/04/03/about/"/>
       <url>/2020/04/03/about/</url>
