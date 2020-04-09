@@ -138,7 +138,7 @@
 <a id="more"></a>
 
 <h2 id="常见命令学习"><a href="#常见命令学习" class="headerlink" title="常见命令学习"></a>常见命令学习</h2><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><p>git config –global user.name ‘’    # 设置提交的用户名和email<br>git config –global user.email ‘’<br>git init newproject        # 新建项目<br>git status    # 查看文件状态</p>
-
+<img src="/2020/04/03/%E7%8E%A9%E8%BD%ACGit%E4%B8%89%E5%89%91%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/areas.png" class="" title="Git areas">
 
 <img src="/2020/04/03/%E7%8E%A9%E8%BD%ACGit%E4%B8%89%E5%89%91%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%AF%B9%E8%B1%A1%E5%85%B3%E7%B3%BB.png" class="" title="Git对象关系">
 <h3 id="暂存区命令"><a href="#暂存区命令" class="headerlink" title="暂存区命令"></a>暂存区命令</h3><p>git add file1    # 将工作目录文件添加到暂存区，暂存区进可提交，退可回滚<br>git add -u # 添加所有修改的文件到暂存区<br>git mv file1 file2    # 重命名暂存区文件<br>gir rm file     # 删除工作目录文件file，同时更新到暂存区<br>git diff [– filename]    # 对比工作区和暂存区所有文件的差异，可以指定filename进行对比<br>git diff –cache    # 比较HEAD文件和暂存区文件，然后再提交<br>git reset HEAD     # 恢复暂存区为最新提交的<br>git stash [pop]    # 临时存放[恢复]当前工作目录状态<br>git checkout – file    # 将工作区文件恢复为暂存区文件</p>
