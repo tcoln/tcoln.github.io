@@ -7,10 +7,10 @@
 
     
 
-    <title>基于HEXO和GitHub搭建个人网站 | tcoln</title>
+    <title>Tag: Hexo | tcoln</title>
     <meta name="author" content="Tom" />
     <meta name="keywords" content="" />
-    <meta name="description" content="基于Hexo和GitHub在CentOS搭建个人网站原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。Hexo是基于nodejs的个人博客框架，所以搭建Hexo之前先按照nodejs及其包管理工具npm。安装Git版本管理软件，设置提交更新的用户名和邮箱。git config –global user.name “your name”git config –global user.email “youremail@domain.com“在..." />
+    <meta name="description" content="个人博客" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -61,7 +61,7 @@
                 <span class="nav-text">首页</span>
             </a>
         
-            <a class="nav-item" href="/tags">
+            <a class="nav-item active" href="/tags">
                 <span class="nav-text">标签</span>
             </a>
         
@@ -85,8 +85,6 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="https://tcoln.github.io"></form>
 
-        
-        
         
         
 
@@ -129,67 +127,53 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            基于HEXO和GitHub搭建个人网站
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="https://tcoln.github.io/2020/04/11/%E5%9F%BA%E4%BA%8EHEXO%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-11T13:58:46.810Z" itemprop="datePublished">2020-04-11</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>基于Hexo和GitHub在CentOS搭建个人网站</p>
-<p>原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。</p>
-<p>Hexo是基于nodejs的个人博客框架，所以搭建Hexo之前先按照nodejs及其包管理工具npm。</p>
-<p>安装Git版本管理软件，设置提交更新的用户名和邮箱。<br>git config –global user.name “your name”<br>git config –global user.email “<a href="mailto:youremail@domain.com">youremail@domain.com</a>“</p>
-<p>在GitHub上创建个人网站的仓库，需与GitHub用户名同名。为了能够让Hexo提交博客文件，生成SSH公钥，复制到GitHub设置里。</p>
-<p>安装部署命令：<br>tar -xf node-v12.16.1-linux-x64.tar<br>cd node-v12.16.1-linux-x64/bin<br>ln -s /home/software/node-v12.16.1-linux-x64/bin/node /usr/bin/node<br>ln -s /home/software/node-v12.16.1-linux-x64/bin/npm /usr/bin/npm<br>npm install hexo -g<br>hexo init blog<br>cd /home/glt/blog/<br>hexo generate<br>hexo deploy</p>
-<p>在Hexo在生成静态文件时，如果内存太小会导致进程killed，可以申请虚拟缓存交换空间<br>free -m<br>dd if=/dev/zero of=/swap bs=4096 count=1572864<br>mkswap /swap<br>swapon /swap<br>echo “LABEL=SWAP-sda /swap swap swap defaults 0 0” &gt;&gt; /etc/fstab</p>
-<p>参考博客：<br><a href="https://www.jianshu.com/p/8bf32184495e" target="_blank" rel="noopener">https://www.jianshu.com/p/8bf32184495e</a><br><a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/asset-folders</a><br><a href="https://blog.csdn.net/linton1/article/details/90137367" target="_blank" rel="noopener">https://blog.csdn.net/linton1/article/details/90137367</a><br><a href="https://blog.csdn.net/zhanghanlun/article/details/104227808" target="_blank" rel="noopener">https://blog.csdn.net/zhanghanlun/article/details/104227808</a></p>
-
-        
-    </section>
-</article>
+                
 
 
-
-<a id="pagenext" href="/2020/04/03/%E7%8E%A9%E8%BD%ACGit%E4%B8%89%E5%89%91%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-next" title="玩转Git三剑客学习笔记"><i class="icon-arrow-right"></i></a>
-
-
-
-
-<div class="comments">
-    <div id="comments"></div>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-    new Gitalk({
-        clientID: "c8b1e233f3a0a2703007",
-        clientSecret: "732831928640460f4a8266b2f75b07790cfa9d42",
-        repo: "tcoln.github.io",
-        owner: "tcoln",
-        admin: ["tcoln"],
-        id: "2020/04/11/基于HEXO和GitHub搭建个人网站",
-        distractionFreeMode: true,
-        title: "基于HEXO和GitHub搭建个人网站",
-        body: "https://tcoln.github.io/2020/04/11/%E5%9F%BA%E4%BA%8EHEXO%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/",
-        labels: []
-    }).render('comments');
-    </script>
+<div class="page-hd">
+    Hexo
+    <small>(1)</small>
 </div>
+
+
+
+    
+    
+    
+    
+    
+    <section class="archives-wrap">
+    <div class="archive-year-wrap">
+    <a href="/archives/2020" class="page-hd">
+        2020
+    </a>
+    </div>
+    <ol class="archives">
+    
+
+    <li class="archive-section-item">
+        
+<article class="archive-article archive-type-post">
+    <div class="archive-article-inner">
+        <header class="archive-article-header">
+            <a class="archive-article-link" href="/2020/04/01/%E5%9F%BA%E4%BA%8EHEXO%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">基于Hexo和GitHub在CentOS搭建个人网站</a>
+            <span class="archive-article-date">
+                (<a class="article-date" href="/archives/2020/04">
+    
+    <time datetime="2020-04-01T09:40:08.000Z" itemprop="datePublished">4/1</time>
+</a>
+)
+            </span>
+        </header>
+    </div>
+</article>
+    </li>
+
+
+</ol></section>
+
+
+
 
 
             </div>
@@ -253,33 +237,6 @@
         }
     });
     </script>
-    
-        
-<script src="/js/scrollspy.min.js"></script>
-
-        <script type="text/javascript">
-        $(document.body).scrollspy({target: '#aside-inner'});
-
-        $(window).on('resize', function() {
-            var hw = $('#header').width();
-            var ww = $('#wrapper').width();
-            var space = ($(this).width() - hw - ww) / 2 / 2;
-
-            var pageprev = $('#pageprev');
-            var pagenext = $('#pagenext');
-            var avg = (pageprev.width() + pagenext.width()) / 2
-
-            if(space > avg) {
-                var len = space - avg / 2;
-                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
-                pageprev.css($.extend({left: hw + len}, styles));
-                pagenext.css($.extend({right: len}, styles));
-            } else {
-                pageprev.removeAttr('style');
-                pagenext.removeAttr('style');
-            }
-        }).trigger('resize');
-        </script>
     
 
 </body>
