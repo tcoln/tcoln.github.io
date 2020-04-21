@@ -10,7 +10,7 @@
     <title>TensorFlow快速入门与实战 | tcoln</title>
     <meta name="author" content="Tom" />
     <meta name="keywords" content="" />
-    <meta name="description" content="机器学习&amp;amp;深度学习机器学习、深度学习模型三个部分：模型、损失函数、优化算法常见损失函数：softmax_cross_entropy，binary_cross_entropy、sigmoid_cross_entropy损失函数softmax_cross_entropy、binary_cross_entropy、sigmoid_cross_entropy之间的区别与联系softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。binary_cross_ent..." />
+    <meta name="description" content="机器学习&amp;amp;深度学习机器学习、深度学习模型三个部分：模型、损失函数、优化算法常见损失函数：softmax_cross_entropy，binary_cross_entropy、sigmoid_cross_entropy损失函数softmax_cross_entropy、binary_cross_entropy、sigmoid_cross_entropy之间的区别与联系softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。binary_cross_e..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -128,7 +128,9 @@
     
     <section class="article-body markdown-body">
         
-        <h2 id="机器学习-amp-深度学习"><a href="#机器学习-amp-深度学习" class="headerlink" title="机器学习&amp;深度学习"></a>机器学习&amp;深度学习</h2><p>机器学习、深度学习模型三个部分：模型、损失函数、优化算法<br>常见损失函数：softmax_cross_entropy，binary_cross_entropy、sigmoid_cross_entropy<br><a href="https://www.jianshu.com/p/47172eb86b39" target="_blank" rel="noopener">损失函数softmax_cross_entropy、binary_cross_entropy、sigmoid_cross_entropy之间的区别与联系</a><br>softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。<br>binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。<br>sigmoid_cross_entropy用于类别独立且不相互排斥，可以执行多标签分类，如图片可以同时包含大象和狗。</p>
+        <a id="more"></a>
+
+<h2 id="机器学习-amp-深度学习"><a href="#机器学习-amp-深度学习" class="headerlink" title="机器学习&amp;深度学习"></a>机器学习&amp;深度学习</h2><p>机器学习、深度学习模型三个部分：模型、损失函数、优化算法<br>常见损失函数：softmax_cross_entropy，binary_cross_entropy、sigmoid_cross_entropy<br><a href="https://www.jianshu.com/p/47172eb86b39" target="_blank" rel="noopener">损失函数softmax_cross_entropy、binary_cross_entropy、sigmoid_cross_entropy之间的区别与联系</a><br>softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。<br>binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。<br>sigmoid_cross_entropy用于类别独立且不相互排斥，可以执行多标签分类，如图片可以同时包含大象和狗。</p>
 <p>梯度下降算法优化器</p>
 <ul>
 <li>Momentum优化器：由于波谷容易来回震荡；引入上一轮的动量，加速收敛，抑制震荡。<br>$$m=\epsilon<em>g+\gamma</em>m$$<br>$$\Delta\theta=-m$$</li>
