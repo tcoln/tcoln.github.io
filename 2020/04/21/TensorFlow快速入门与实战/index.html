@@ -10,7 +10,7 @@
     <title>TensorFlow快速入门与实战 | tcoln</title>
     <meta name="author" content="Tom" />
     <meta name="keywords" content="" />
-    <meta name="description" content="机器学习 &amp;amp; 深度学习机器学习、深度学习模型三个部分：模型、损失函数、优化算法常见损失函数softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。sigmoid_..." />
+    <meta name="description" content="机器学习 &amp;amp; 深度学习机器学习、深度学习三个部分：模型、损失函数、优化算法常见损失函数softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。sigmoid_c..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -91,7 +91,7 @@
         
 
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习-amp-深度学习"><span class="toc-number">1.</span> <span class="toc-text">机器学习 &amp; 深度学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#机器学习、深度学习模型三个部分：模型、损失函数、优化算法"><span class="toc-number">1.1.</span> <span class="toc-text">机器学习、深度学习模型三个部分：模型、损失函数、优化算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见损失函数"><span class="toc-number">1.2.</span> <span class="toc-text">常见损失函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度下降算法优化器"><span class="toc-number">1.3.</span> <span class="toc-text">梯度下降算法优化器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TensorFlow基本概念"><span class="toc-number">2.</span> <span class="toc-text">TensorFlow基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keras常用命令"><span class="toc-number">3.</span> <span class="toc-text">Keras常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#卷积神经网络"><span class="toc-number">4.</span> <span class="toc-text">卷积神经网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python-amp-numpy-amp-matplot"><span class="toc-number">5.</span> <span class="toc-text">python &amp; numpy &amp; matplot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实战案例"><span class="toc-number">6.</span> <span class="toc-text">实战案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#验证码识别"><span class="toc-number">6.1.</span> <span class="toc-text">验证码识别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理流程"><span class="toc-number">6.2.</span> <span class="toc-text">数据处理流程</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习-amp-深度学习"><span class="toc-number">1.</span> <span class="toc-text">机器学习 &amp; 深度学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见损失函数"><span class="toc-number">1.1.</span> <span class="toc-text">常见损失函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度下降算法优化器"><span class="toc-number">1.2.</span> <span class="toc-text">梯度下降算法优化器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TensorFlow基本概念"><span class="toc-number">2.</span> <span class="toc-text">TensorFlow基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keras常用命令"><span class="toc-number">3.</span> <span class="toc-text">Keras常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#卷积神经网络"><span class="toc-number">4.</span> <span class="toc-text">卷积神经网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python-amp-numpy-amp-matplot"><span class="toc-number">5.</span> <span class="toc-text">python &amp; numpy &amp; matplot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实战案例"><span class="toc-number">6.</span> <span class="toc-text">实战案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#验证码识别"><span class="toc-number">6.1.</span> <span class="toc-text">验证码识别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理流程"><span class="toc-number">6.2.</span> <span class="toc-text">数据处理流程</span></a></li></ol></li></ol>
         
     </div>
 </aside>
@@ -130,7 +130,8 @@
         
         <a id="more"></a>
 
-<h2 id="机器学习-amp-深度学习"><a href="#机器学习-amp-深度学习" class="headerlink" title="机器学习 &amp; 深度学习"></a>机器学习 &amp; 深度学习</h2><h3 id="机器学习、深度学习模型三个部分：模型、损失函数、优化算法"><a href="#机器学习、深度学习模型三个部分：模型、损失函数、优化算法" class="headerlink" title="机器学习、深度学习模型三个部分：模型、损失函数、优化算法"></a>机器学习、深度学习模型三个部分：模型、损失函数、优化算法</h3><h3 id="常见损失函数"><a href="#常见损失函数" class="headerlink" title="常见损失函数"></a>常见<a href="https://www.jianshu.com/p/47172eb86b39" target="_blank" rel="noopener">损失函数</a></h3><ul>
+<h2 id="机器学习-amp-深度学习"><a href="#机器学习-amp-深度学习" class="headerlink" title="机器学习 &amp; 深度学习"></a>机器学习 &amp; 深度学习</h2><p>机器学习、深度学习三个部分：模型、损失函数、优化算法</p>
+<h3 id="常见损失函数"><a href="#常见损失函数" class="headerlink" title="常见损失函数"></a>常见<a href="https://www.jianshu.com/p/47172eb86b39" target="_blank" rel="noopener">损失函数</a></h3><ul>
 <li>softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。</li>
 <li>binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。</li>
 <li>sigmoid_cross_entropy用于类别独立且不相互排斥，可以执行多标签分类，如图片可以同时包含大象和狗。</li>
