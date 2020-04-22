@@ -143,7 +143,7 @@
  \require{cancel}\begin{array}{rl}
  \bcancel{\Delta\theta=-\frac{m}{\epsilon+\sqrt{\gamma}}}
  \end{array}
-$$[^footnote]
+$$  [^f]
 由于在训练的时候m初始值为0，会导致$m_t$偏向于0。所以，需要对梯度均值m进行偏差纠正，降低偏差对初始值的影响。同理$\gamma$也需要偏差纠正。
 $$ \hat{m} =\frac{m}{1-{\beta_1}^t}</script><script type="math/tex; mode=display">\hat{\gamma} =\frac{\gamma}{1-{\beta_2}^t}</script><script type="math/tex; mode=display">\Delta\theta=-\frac{\hat{m}}{\epsilon+\sqrt{\hat{\gamma}}}</script></li>
 </ul>
@@ -158,8 +158,8 @@ $$ \hat{m} =\frac{m}{1-{\beta_1}^t}</script><script type="math/tex; mode=display
 <h2 id="python-amp-numpy-amp-matplot"><a href="#python-amp-numpy-amp-matplot" class="headerlink" title="python &amp; numpy &amp; matplot"></a>python &amp; numpy &amp; matplot</h2><p>np.nonzero()    # 保留非0数据<br>np.astype(‘float32’)    # 类型转换<br>str.lstrip(‘’)    # 左边特定字符串替换为空<br>plt.xticks([])    # 清空绘图坐标轴<br>plt.yticks([])</p>
 <h2 id="实战案例"><a href="#实战案例" class="headerlink" title="实战案例"></a>实战案例</h2><h3 id="验证码识别"><a href="#验证码识别" class="headerlink" title="验证码识别"></a>验证码识别</h3><p>Jupyter交互式开发环境<br>captcha验证码生成库<br>pillow图片读写库<br>pydot图片格式转换库<br>Flask轻量级web应用框架</p>
 <h3 id="数据处理流程"><a href="#数据处理流程" class="headerlink" title="数据处理流程"></a>数据处理流程</h3><p>输入转灰度图后归一化<br>input_shape与channels_last<br>输出标签one-hot编码</p>
-<blockquote id="fn_footnote">
-<sup>footnote</sup>. <a href="https://www.jianshu.com/p/a7fa1ed4ca20" target="_blank" rel="noopener">mathjax公式编辑器常见语法</a><a href="#reffn_footnote" title="Jump back to footnote [footnote] in the text."> &#8617;</a>
+<blockquote id="fn_f">
+<sup>f</sup>. <a href="https://www.jianshu.com/p/a7fa1ed4ca20" target="_blank" rel="noopener">mathjax公式编辑器常见语法</a><a href="#reffn_f" title="Jump back to footnote [f] in the text."> &#8617;</a>
 </blockquote>
 
         
