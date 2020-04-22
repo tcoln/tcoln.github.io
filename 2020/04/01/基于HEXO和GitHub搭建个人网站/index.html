@@ -10,7 +10,7 @@
     <title>基于Hexo和GitHub在CentOS搭建个人网站 | tcoln</title>
     <meta name="author" content="Tom" />
     <meta name="keywords" content="null" />
-    <meta name="description" content="原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。基础软件Hexo是基于nodejs的个人博客框架，所以搭建Hexo之前先按照nodejs及其包管理工具npm。安装Git版本管理软件，设置提交更新的用户名和邮箱。git config –global user.name “your name”git config –global user.email “youremail@domain.com“在GitHub上创建个人网站的仓库，需与Gi..." />
+    <meta name="description" content="原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。基础软件Hexo是基于nodejs的个人博客框架，所以搭建Hexo之前先按照nodejs及其包管理工具npm。安装Git版本管理软件，设置提交更新的用户名和邮箱。git config —global user.name “your name”git config —global user.email “youremail@domain.com”在GitHub上创建个人网站的仓库，需与GitH..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -128,11 +128,9 @@
     
     <section class="article-body markdown-body">
         
-        <p>原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。</p>
-<a id="more"></a>
-
+        <p>原理：Hexo作为客户端，利用Git提交静态博客文件到GitHub上，由GitHub托管网页。<br><a id="more"></a></p>
 <h2 id="基础软件"><a href="#基础软件" class="headerlink" title="基础软件"></a>基础软件</h2><p>Hexo是基于nodejs的个人博客框架，所以搭建Hexo之前先按照nodejs及其包管理工具npm。</p>
-<p>安装Git版本管理软件，设置提交更新的用户名和邮箱。<br>git config –global user.name “your name”<br>git config –global user.email “<a href="mailto:youremail@domain.com">youremail@domain.com</a>“</p>
+<p>安装Git版本管理软件，设置提交更新的用户名和邮箱。<br>git config —global user.name “your name”<br>git config —global user.email “youremail@domain.com”</p>
 <p>在GitHub上创建个人网站的仓库，需与GitHub用户名同名。为了能够让Hexo提交博客文件，生成SSH公钥，复制到GitHub设置里。</p>
 <h2 id="安装部署命令"><a href="#安装部署命令" class="headerlink" title="安装部署命令"></a>安装部署命令</h2><p>tar -xf node-v12.16.1-linux-x64.tar<br>cd node-v12.16.1-linux-x64/bin<br>ln -s /home/software/node-v12.16.1-linux-x64/bin/node /usr/bin/node<br>ln -s /home/software/node-v12.16.1-linux-x64/bin/npm /usr/bin/npm<br>npm install hexo -g<br>hexo init blog<br>cd /home/glt/blog/<br>hexo generate<br>hexo deploy</p>
 <h2 id="编译失败"><a href="#编译失败" class="headerlink" title="编译失败"></a>编译失败</h2><p>在Hexo在生成静态文件时，如果内存太小会导致进程killed，可以申请虚拟缓存交换空间<br>free -m<br>dd if=/dev/zero of=/swap bs=4096 count=1572864<br>mkswap /swap<br>swapon /swap<br>echo “LABEL=SWAP-sda /swap swap swap defaults 0 0” &gt;&gt; /etc/fstab</p>
