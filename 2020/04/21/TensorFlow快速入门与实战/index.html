@@ -153,7 +153,7 @@
 <h2 id="Keras常用命令"><a href="#Keras常用命令" class="headerlink" title="Keras常用命令"></a>Keras常用命令</h2><p>model=Sequential()定义模型<br>model.compile()编译模型<br>model.fit()训练模型<br>model.save()保存模型为HDF5文件<br>model.sumary()查看模型网络结构、参数个数<br>model.history模型训练过程中的关键指标记录</p>
 <h2 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h2><p>convolutional layer利用输入数据中特征的局部性和位置无关系来降低数量并提取局部特征。<br>pooling layer<br>dropout layer是一种正则化层，每一轮训练的时候随机关闭一些神经元，不进行更新；测试的时候所有神经元都是用的。<br>Flatten()层多维数据转换为一维数据</p>
 <h2 id="python-amp-numpy-amp-matplot"><a href="#python-amp-numpy-amp-matplot" class="headerlink" title="python &amp; numpy &amp; matplot"></a>python &amp; numpy &amp; matplot</h2><p>np.nonzero()    # 保留非0数据<br>np.astype(‘float32’)    # 类型转换<br>str.lstrip(‘’)    # 左边特定字符串替换为空<br>plt.xticks([])    # 清空绘图坐标轴<br>plt.yticks([])</p>
-<h2 id="实战案例"><a href="#实战案例" class="headerlink" title="实战案例"></a>实战案例</h2><img src="/2020/04/21/TensorFlow%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98/TensorFlow%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.png" class="" title="工作流程">
+<h2 id="实战案例"><a href="#实战案例" class="headerlink" title="实战案例"></a>实战案例</h2><p><div style="width:70%;margin:auto"><img src="/2020/04/21/TensorFlow%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98/TensorFlow%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.png" class="" title="工作流程"></div></p>
 <h3 id="验证码识别"><a href="#验证码识别" class="headerlink" title="验证码识别"></a>验证码识别</h3><p>Jupyter交互式开发环境<br>captcha验证码生成库<br>pillow图片读写库<br>pydot图片格式转换库<br>Flask轻量级web应用框架</p>
 <h3 id="数据处理流程"><a href="#数据处理流程" class="headerlink" title="数据处理流程"></a>数据处理流程</h3><p>输入转灰度图后归一化<br>input_shape与channels_last<br>输出标签one-hot编码</p>
 <blockquote id="fn_1">
