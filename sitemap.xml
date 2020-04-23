@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tcoln.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-04-23T03:55:52.844Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tcoln.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-04-23T03:55:44.292Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tcoln.github.io/2020/04/21/TensorFlow%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98/</loc>
     
     <lastmod>2020-04-23T03:46:01.185Z</lastmod>
@@ -23,23 +37,9 @@
   </url>
   
   <url>
-    <loc>https://tcoln.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-04-11T14:27:19.077Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tcoln.github.io/about/index.html</loc>
     
     <lastmod>2020-04-09T09:56:59.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tcoln.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-04-04T15:00:54.982Z</lastmod>
     
   </url>
   
