@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tcoln.github.io/about/index.html</loc>
+    
+    <lastmod>2020-04-23T04:02:05.267Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tcoln.github.io/tags/index.html</loc>
     
     <lastmod>2020-04-23T03:58:03.602Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://tcoln.github.io/2020/04/01/%E5%9F%BA%E4%BA%8EHEXO%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</loc>
     
     <lastmod>2020-04-22T02:33:27.045Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tcoln.github.io/about/index.html</loc>
-    
-    <lastmod>2020-04-09T09:56:59.351Z</lastmod>
     
   </url>
   
