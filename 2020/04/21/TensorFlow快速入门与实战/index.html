@@ -137,7 +137,8 @@
 <h3 id="常见损失函数"><a href="#常见损失函数" class="headerlink" title="常见损失函数"></a>常见<a href="https://www.jianshu.com/p/47172eb86b39" target="_blank" rel="noopener">损失函数</a></h3><ul>
 <li>softmax_cross_entropy用于在二分类或者类别相互排斥的多分类任务中。</li>
 <li>binary_cross_entropy是二分类的交叉熵，实际是多分类softmax_cross_entropy的一种特殊情况，当多分类中，类别只有两类时，即0或者1，即为二分类，二分类也是一个逻辑回归问题，也可以套用逻辑回归的损失函数（sigmoid_cross_entropy）。</li>
-<li>sigmoid_cross_entropy用于类别独立且不相互排斥，可以执行多标签分类，如图片可以同时包含大象和狗。</li>
+<li>sigmoid_cross_entropy用于类别独立且不相互排斥，可以执行多标签分类，如图片可以同时包含大象和狗。<img src="/2020/04/21/TensorFlow%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98/%E4%BA%A4%E5%8F%89%E7%86%B5%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0.png" class="">
+</li>
 </ul>
 <h3 id="梯度下降算法优化器"><a href="#梯度下降算法优化器" class="headerlink" title="梯度下降算法优化器"></a>梯度下降算法优化器</h3><ul>
 <li>Momentum优化器：由于波谷容易来回震荡；引入上一轮的动量（一阶矩估计），加速收敛，抑制震荡。<script type="math/tex; mode=display">\color{red}{m}=\lambda*g+\color{red}{\beta}*m</script><script type="math/tex; mode=display">\Delta\theta=-m</script>其中$\lambda$是学习率，g是原始梯度，$\beta$是动量m的衰减系数，通常为0.9。</li>
